@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "3.1"
+metadata:
+  name: com.comporte.workflowmonitoralp.workflowmonitoralp
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          url: https://s4-sbx.comporte.com.br
+          client: '300'
+        app:
+          name: ZWF_MONITOR_ALP
+          description: Monitor de Workflows - Analytical List Page
+          package: ZWORKFLOW_MONITOR
+          transport: S4XK900193
+        exclude:
+          - /test/
