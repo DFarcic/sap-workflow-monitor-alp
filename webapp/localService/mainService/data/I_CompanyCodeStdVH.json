@@ -1,0 +1,18 @@
+[
+  {
+    "CompanyCode": "1000",
+    "CompanyCodeName": "Comporte Matriz"
+  },
+  {
+    "CompanyCode": "2000",
+    "CompanyCodeName": "Comporte Serviços"
+  },
+  {
+    "CompanyCode": "3000",
+    "CompanyCodeName": "Comporte Indústria"
+  },
+  {
+    "CompanyCode": "4000",
+    "CompanyCodeName": "Comporte Logística"
+  }
+]

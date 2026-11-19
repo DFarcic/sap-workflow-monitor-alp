@@ -1,0 +1,66 @@
+[
+  {
+    "ID": "SUPV-1",
+    "WorkflowInternalID": "",
+    "Supplier": "0000100001",
+    "SupplierName": "Alfa Tecnologia Ltda.",
+    "WorkflowCreationDate": "/Date(1794225600000)/",
+    "WorkflowCount": 4
+  },
+  {
+    "ID": "SUPV-2",
+    "WorkflowInternalID": "",
+    "Supplier": "0000100004",
+    "SupplierName": "Delta Transportes Ltda.",
+    "WorkflowCreationDate": "/Date(1794225600000)/",
+    "WorkflowCount": 4
+  },
+  {
+    "ID": "SUPV-3",
+    "WorkflowInternalID": "",
+    "Supplier": "0000100007",
+    "SupplierName": "Ômega Facilities",
+    "WorkflowCreationDate": "/Date(1794225600000)/",
+    "WorkflowCount": 4
+  },
+  {
+    "ID": "SUPV-4",
+    "WorkflowInternalID": "",
+    "Supplier": "0000100002",
+    "SupplierName": "Beta Serviços Empresariais",
+    "WorkflowCreationDate": "/Date(1794225600000)/",
+    "WorkflowCount": 4
+  },
+  {
+    "ID": "SUPV-5",
+    "WorkflowInternalID": "",
+    "Supplier": "0000100005",
+    "SupplierName": "Épsilon Consultoria",
+    "WorkflowCreationDate": "/Date(1794225600000)/",
+    "WorkflowCount": 4
+  },
+  {
+    "ID": "SUPV-6",
+    "WorkflowInternalID": "",
+    "Supplier": "0000100008",
+    "SupplierName": "Sigma Componentes",
+    "WorkflowCreationDate": "/Date(1794225600000)/",
+    "WorkflowCount": 4
+  },
+  {
+    "ID": "SUPV-7",
+    "WorkflowInternalID": "",
+    "Supplier": "0000100003",
+    "SupplierName": "Gama Materiais Industriais",
+    "WorkflowCreationDate": "/Date(1794225600000)/",
+    "WorkflowCount": 3
+  },
+  {
+    "ID": "SUPV-8",
+    "WorkflowInternalID": "",
+    "Supplier": "0000100006",
+    "SupplierName": "Zeta Equipamentos",
+    "WorkflowCreationDate": "/Date(1794225600000)/",
+    "WorkflowCount": 3
+  }
+]

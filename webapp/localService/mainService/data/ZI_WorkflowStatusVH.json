@@ -1,0 +1,14 @@
+[
+  {
+    "WorkflowStatus": "PENDING"
+  },
+  {
+    "WorkflowStatus": "APPROVED"
+  },
+  {
+    "WorkflowStatus": "REJECTED"
+  },
+  {
+    "WorkflowStatus": "IN_PROCESS"
+  }
+]

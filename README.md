@@ -2,101 +2,155 @@
 
 ## Overview
 
-The SAP Workflow Monitor is a SAP Fiori Elements Analytical List Page (ALP) application designed to provide centralized visibility into workflow processing, approval status, pending amounts, and approval history.
+A SAP Fiori Elements Analytical List Page (ALP) application designed to provide centralized visibility into SAP workflow processing, approval status, pending amounts, and approval history.
 
-The application enables business users to monitor workflows, analyze approval bottlenecks, and access detailed information about business documents and their approval processes.
+The application provides analytical insights and operational monitoring through interactive charts, visual filters, KPIs, and detailed workflow information.
 
-## Key Features
+## Features
 
 ### Analytical Dashboard
-- Workflow distribution by company code.
+- Workflow distribution by company.
 - Workflow distribution by document type.
-- Workflow distribution by approval status.
-- Workflow distribution by supplier.
+- Workflow distribution by status.
+- Supplier-related analytics.
 - Interactive visual filters.
 
-### Key Performance Indicators (KPIs)
-- Total amount pending approval.
+### KPIs
+- Total pending approval amount.
 - Pending amounts by supplier.
-- KPI visualization based on the selected filter criteria.
+- Analytical indicators based on application filters.
 
 ### Workflow Monitoring
-- Workflow identification and status.
+- Workflow ID and status.
 - Document type and document number.
-- Company code and supplier information.
+- Company and supplier information.
 - Document amount and currency.
-- Number of days the workflow has been open.
-- Semantic status indicators.
+- Days open with criticality indicators.
 
 ### Workflow Details
-- Document information.
-- Workflow creation information.
-- Workflow creator and current approver.
-- Approval history.
-- Event date, time, responsible agent, and messages.
+- Workflow identification and summary.
+- Document and creation information.
+- Creator and current approver.
+- Approval history, including event date, time, agent, and messages.
 
 ## Technical Architecture
 
 | Component | Technology |
 |---|---|
 | Frontend | SAPUI5 |
-| Application Framework | SAP Fiori Elements |
-| Application Template | Analytical List Page (ALP) |
-| Object Page | SAP Fiori Elements Object Page |
-| Data Protocol | OData V2 |
-| Main Entity Set | WorkflowMonitor |
-| History Entity Set | WorkflowHistory |
-| Main KPI | PendingAmount |
-| Navigation | SAP Fiori Launchpad Intent-Based Navigation |
+| UI Framework | SAP Fiori Elements |
+| Application Type | Analytical List Page |
+| Detail Page | Object Page |
+| Data Service | SAP OData V2 |
+| Main Entity | WorkflowMonitor |
+| History Entity | WorkflowHistory |
+| KPI Entity | PendingAmountKPI |
+| Development Tools | VS Code, SAP Fiori Tools, UI5 Tooling |
 
 ### OData Service
 
-The application consumes the following OData service:
-
 `ZUI_WF_MONITOR_ALP_O2`
 
-The service exposes the workflow monitoring data, analytical entities, KPI entities, visual filter entities, and approval history.
-
 ### Semantic Navigation
-
-The application is configured for SAP Fiori Launchpad navigation using:
 
 - Semantic Object: `ZWorkflowALP`
 - Action: `monitor`
 
-## Application Structure
+## Running the Application
 
-The application follows the SAP Fiori Elements Analytical List Page architecture.
+The project supports two execution modes.
 
-- **Analytical List Page:** Main dashboard with filters, charts, KPIs, and workflow table.
-- **Object Page:** Detailed workflow information.
-- **Approval History:** Associated workflow event history.
+### 1. SAP Backend Mode
+
+Connects to the configured SAP backend and retrieves actual service data.
+
+```bash
+npm install
+npm start
+```
+
+Requires access to an SAP system with the OData service activated and the appropriate authorizations.
+
+### 2. Local Mock Mode
+
+Runs the frontend independently of an SAP backend using the SAP Fiori Tools MockServer.
+
+```bash
+npm install
+npm run start-mock
+```
+
+The mock implementation uses:
+
+- Local OData V2 metadata.
+- Local annotation XML files.
+- JSON mock data.
+- SAP Fiori Tools MockServer middleware.
+
+No SAP backend connection is required for the local demonstration.
+
+### Mock Data Structure
+
+Mock data is maintained in:
+
+```text
+webapp/localService/mainService/data/
+```
+
+The sample dataset includes fictional:
+
+- Workflow records.
+- Approval history events.
+- Companies and suppliers.
+- Workflow statuses.
+- Document types.
+- KPI and visual filter data.
+
+All demonstration data is fictional and uses BRL as the currency.
+
+Developers can modify or extend the JSON files to create additional demonstration scenarios.
 
 ## Requirements
 
-- SAP S/4HANA system with the required OData service activated.
-- SAPUI5 version 1.96.50 or higher.
-- SAP Fiori Launchpad access.
-- Appropriate authorizations to access workflow monitoring data.
+- Node.js and npm.
+- SAP Fiori Tools.
+- UI5 Tooling.
+- SAPUI5 1.96.50 or higher.
+- SAP backend access for SAP-connected execution only.
+
+## Project Structure
+
+```text
+workflow-monitor-alp/
+├── webapp/
+│   ├── annotations/
+│   ├── localService/
+│   │   └── mainService/
+│   │       ├── metadata.xml
+│   │       ├── ZUI_WF_MONITOR_ALP_O2_VAN.xml
+│   │       └── data/
+│   ├── manifest.json
+│   └── Component.js
+├── ui5.yaml
+├── ui5-mock.yaml
+├── package.json
+└── README.md
+```
 
 ## Screenshots
 
-Application screenshots will be added here.
+Screenshots of the application can be added here to demonstrate:
 
-Suggested screenshots:
-
-1. Analytical dashboard.
-2. Visual filters and KPI cards.
-3. Workflow monitoring table.
-4. Workflow detail page.
-5. Approval history.
+- Analytical dashboard and visual filters.
+- Workflow monitoring table.
+- KPI indicators.
+- Workflow Object Page.
+- Approval history.
 
 ## Disclaimer
 
-This repository is intended for technical portfolio and demonstration purposes.
+This project is intended for technical demonstration and portfolio purposes.
 
-All company-specific information, business data, and system credentials must be removed or anonymized before publication.
+All mock data must be fictional. Backend connectivity and SAP-specific configurations may need adaptation to the target SAP environment.
 
----
-
-**Developed with SAP technologies.**
+The project does not include SAP backend implementation or authorization configuration.

@@ -1,0 +1,30 @@
+[
+  {
+    "ID": "SV-1",
+    "WorkflowInternalID": "",
+    "WorkflowStatus": "PENDING",
+    "WorkflowCreationDate": "/Date(1794225600000)/",
+    "WorkflowCount": 15
+  },
+  {
+    "ID": "SV-2",
+    "WorkflowInternalID": "",
+    "WorkflowStatus": "APPROVED",
+    "WorkflowCreationDate": "/Date(1794225600000)/",
+    "WorkflowCount": 8
+  },
+  {
+    "ID": "SV-3",
+    "WorkflowInternalID": "",
+    "WorkflowStatus": "REJECTED",
+    "WorkflowCreationDate": "/Date(1794225600000)/",
+    "WorkflowCount": 4
+  },
+  {
+    "ID": "SV-4",
+    "WorkflowInternalID": "",
+    "WorkflowStatus": "IN_PROCESS",
+    "WorkflowCreationDate": "/Date(1794225600000)/",
+    "WorkflowCount": 3
+  }
+]

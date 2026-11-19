@@ -1,0 +1,30 @@
+[
+  {
+    "ID": "DTV-1",
+    "WorkflowInternalID": "",
+    "DocumentType": "KR",
+    "WorkflowCreationDate": "/Date(1794225600000)/",
+    "WorkflowCount": 8
+  },
+  {
+    "ID": "DTV-2",
+    "WorkflowInternalID": "",
+    "DocumentType": "RE",
+    "WorkflowCreationDate": "/Date(1794225600000)/",
+    "WorkflowCount": 8
+  },
+  {
+    "ID": "DTV-3",
+    "WorkflowInternalID": "",
+    "DocumentType": "KG",
+    "WorkflowCreationDate": "/Date(1794225600000)/",
+    "WorkflowCount": 7
+  },
+  {
+    "ID": "DTV-4",
+    "WorkflowInternalID": "",
+    "DocumentType": "SA",
+    "WorkflowCreationDate": "/Date(1794225600000)/",
+    "WorkflowCount": 7
+  }
+]

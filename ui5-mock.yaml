@@ -15,10 +15,6 @@ server:
             - /resources
             - /test-resources
           url: https://ui5.sap.com
-        backend:
-          - path: /sap
-            url: https://s4-sbx.comporte.com.br
-            client: '300'
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
@@ -39,7 +35,6 @@ server:
             metadataPath: ./webapp/localService/mainService/metadata.xml
             mockdataPath: ./webapp/localService/mainService/data
             generateMockData: true
-            resolveExternalServiceReferences: true
         annotations:
           - localPath: ./webapp/localService/mainService/ZUI_WF_MONITOR_ALP_O2_VAN.xml
             urlPath: /sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZUI_WF_MONITOR_ALP_O2_VAN',Version='0001')/$value/

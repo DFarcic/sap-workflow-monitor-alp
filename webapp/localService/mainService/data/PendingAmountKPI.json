@@ -1,0 +1,58 @@
+[
+  {
+    "ID": "PA-1",
+    "WorkflowInternalID": "100000000029",
+    "WorkflowExternalStatus": "PENDING",
+    "CompanyCode": "1000",
+    "CompanyCodeName": "Comporte Matriz",
+    "Supplier": "0000100005",
+    "SupplierName": "Épsilon Consultoria",
+    "BusinessObjectName": "KR",
+    "WorkflowCreationDate": "/Date(1787630400000)/",
+    "DocumentCurrency": "BRL",
+    "DocumentAmount": "65994.00",
+    "KPICriticality": "2"
+  },
+  {
+    "ID": "PA-2",
+    "WorkflowInternalID": "100000000030",
+    "WorkflowExternalStatus": "PENDING",
+    "CompanyCode": "2000",
+    "CompanyCodeName": "Comporte Serviços",
+    "Supplier": "0000100008",
+    "SupplierName": "Sigma Componentes",
+    "BusinessObjectName": "RE",
+    "WorkflowCreationDate": "/Date(1794967200000)/",
+    "DocumentCurrency": "BRL",
+    "DocumentAmount": "77852.75",
+    "KPICriticality": "2"
+  },
+  {
+    "ID": "PA-3",
+    "WorkflowInternalID": "100000000027",
+    "WorkflowExternalStatus": "IN_PROCESS",
+    "CompanyCode": "3000",
+    "CompanyCodeName": "Comporte Indústria",
+    "Supplier": "0000100007",
+    "SupplierName": "Ômega Facilities",
+    "BusinessObjectName": "KG",
+    "WorkflowCreationDate": "/Date(1788163200000)/",
+    "DocumentCurrency": "BRL",
+    "DocumentAmount": "63330.00",
+    "KPICriticality": "2"
+  },
+  {
+    "ID": "PA-4",
+    "WorkflowInternalID": "100000000028",
+    "WorkflowExternalStatus": "PENDING",
+    "CompanyCode": "4000",
+    "CompanyCodeName": "Comporte Logística",
+    "Supplier": "0000100002",
+    "SupplierName": "Beta Serviços Empresariais",
+    "BusinessObjectName": "SA",
+    "WorkflowCreationDate": "/Date(1787896800000)/",
+    "DocumentCurrency": "BRL",
+    "DocumentAmount": "72817.00",
+    "KPICriticality": "2"
+  }
+]
