@@ -137,15 +137,32 @@ workflow-monitor-alp/
 └── README.md
 ```
 
-## Screenshots
 
-Screenshots of the application can be added here to demonstrate:
+## Application Screenshots
 
-- Analytical dashboard and visual filters.
-- Workflow monitoring table.
-- KPI indicators.
-- Workflow Object Page.
-- Approval history.
+### Analytical Dashboard
+
+Interactive analytical dashboard with workflow distribution by status, document type, company, and supplier.
+
+![Analytical Dashboard](docs/screenshots/01-analytical-dashboard.png)
+
+### Workflow Monitoring
+
+Main workflow table with status indicators, document information, and overdue days.
+
+![Workflow Monitoring](docs/screenshots/02-workflow-table.png)
+
+### Workflow Details
+
+Detailed view of an individual workflow and its business information.
+
+![Workflow Details](docs/screenshots/03-workflow-details.png)
+
+### Approval History
+
+Workflow approval history with event dates, times, agents, and descriptions.
+
+![Approval History](docs/screenshots/04-approval-history.png)
 
 ## Disclaimer
 
